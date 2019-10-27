@@ -45,5 +45,5 @@ func sumRolling(item string) {
 func main()  {
 	sumRolling("12345")
 	sumRolling("2121")
-	sumRolling("981")
+	sumRolling("4350")
 }
