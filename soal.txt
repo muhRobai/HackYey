@@ -1,9 +1,0 @@
-4.21 
-jarum panjang untuk emnunjuk detik, 
-tidak ada jarum menit
-tidak ada jarum pendek menunjukan jam
-angka yang tertera di sekeliling jam adalah 1 sampai 60 sesuai jumlah detik dalam menit
-kanan kiri ada tombol
-kiri di tekan bergerak berlawanan jarum jam.
-kanan di tekan bergerak serarah jarum jam.
-jarum bergerak jika di pencet lebih dari 1x be urutan.
