@@ -25,7 +25,7 @@ func lineToline(value string) int{
 	  	if more == true {
 			hosrizontal = append(hosrizontal, "0")
 	  	} else {
-			vertical = append(vertical, "")
+			vertical = append(vertical, "0")
 	  	}
   	}
 
@@ -38,14 +38,14 @@ func lineToline(value string) int{
 			continue
 		} 
 		//getting horizontal value  
-		for l := 0; l < 1; l++ {
+		for l := 0; l < lengthArray; l++ {
 			horizontalValue, _ := strconv.Atoi(hosrizontal[l])
 			if horizontalValue == 0 { 
 				continue
 			}
 			//get x,y coordinate
 			for k := 0; k < horizontalValue; k++ {
-				if verticalValue > k && horizontalValue > line {
+				if verticalValue >= k+1 && horizontalValue > line  && verticalValue > line-1{
 					found++
 				}
 			}
@@ -58,6 +58,6 @@ func lineToline(value string) int{
 func main(){
   log.Println(lineToline("1 1-1 1"))
   log.Println(lineToline("1 1-100"))
-  log.Println(lineToline("2 2 2-10 10 10"))
+  log.Println(lineToline("2 2 2-10 10 10 10"))
   log.Println(lineToline("2 4 1 2 5 3-3 2 3 1"))
 }
