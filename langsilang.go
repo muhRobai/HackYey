@@ -31,17 +31,19 @@ func lineToline(value string) int{
 
 	found := 0
 	line := 0
+	//getting array vertical
   	for j := 0; j < lengthArray; j++ {
 		verticalValue, _ := strconv.Atoi(vertical[j])
 		if verticalValue == 0 { 
 			continue
-		}  
+		} 
+		//getting horizontal value  
 		for l := 0; l < 1; l++ {
 			horizontalValue, _ := strconv.Atoi(hosrizontal[l])
 			if horizontalValue == 0 { 
 				continue
 			}
-			
+			//get x,y coordinate
 			for k := 0; k < horizontalValue; k++ {
 				if verticalValue > k && horizontalValue > line {
 					found++
